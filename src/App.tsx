@@ -1,35 +1,22 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import News from "./pages/News";
-import History from "./pages/History";
-import Gallery from "./pages/Gallery";
-import Contacts from "./pages/Contacts";
-import NotFound from "./pages/NotFound";
+import Index from "@/pages/Index";
+import History from "@/pages/History";
+import News from "@/pages/News";
+import Gallery from "@/pages/Gallery";
+import Contacts from "@/pages/Contacts";
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/history" element={<History />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contacts" element={<Contacts />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contacts" element={<Contacts />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
 export default App;
