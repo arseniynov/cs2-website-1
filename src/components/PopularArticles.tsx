@@ -11,7 +11,7 @@ export default function PopularArticles() {
     },
     {
       id: 2,
-      title: "Топ-10 моментов киберспорта 2024",
+      title: "Топ-10 моментов киберспорта 2025",
       views: "89K",
       icon: "Trophy",
     },

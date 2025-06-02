@@ -8,7 +8,7 @@ export default function NewsPreview() {
       title: "Новое обновление карты Mirage",
       summary:
         "Valve выпустила крупное обновление одной из самых популярных карт",
-      date: "2024-06-01",
+      date: "2025-06-01",
       image:
         "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       category: "Обновления",
@@ -18,7 +18,7 @@ export default function NewsPreview() {
       title: "IEM Cologne 2024: Результаты",
       summary:
         "Завершился один из крупнейших турниров года по Counter Strike 2",
-      date: "2024-05-29",
+      date: "2025-05-29",
       image:
         "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       category: "Киберспорт",
@@ -27,7 +27,7 @@ export default function NewsPreview() {
       id: 3,
       title: "Изменения в экономике игры",
       summary: "Разработчики внесли коррективы в систему покупки оружия",
-      date: "2024-05-25",
+      date: "2025-05-25",
       image:
         "https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       category: "Баланс",
