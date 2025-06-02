@@ -107,7 +107,7 @@ const Contacts = () => {
                       <h3 className="font-semibold text-slate-900 mb-1">
                         Email
                       </h3>
-                      <p className="text-slate-600">info@cs2portal.com</p>
+                      <p className="text-slate-600">novopashin0307@gmail.com</p>
                       <p className="text-sm text-slate-500 mt-1">
                         Ответим в течение 24 часов
                       </p>
@@ -130,7 +130,7 @@ const Contacts = () => {
                       <h3 className="font-semibold text-slate-900 mb-1">
                         Discord
                       </h3>
-                      <p className="text-slate-600">CS2Portal Community</p>
+                      <p className="text-slate-600">@vamapes</p>
                       <p className="text-sm text-slate-500 mt-1">
                         Присоединяйтесь к нашему сообществу
                       </p>
@@ -142,16 +142,20 @@ const Contacts = () => {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
-                    <div className="bg-green-100 p-3 rounded-lg">
-                      <Icon name="Clock" size={24} className="text-green-500" />
+                    <div className="bg-purple-100 p-3 rounded-lg">
+                      <Icon
+                        name="MessageSquare"
+                        size={24}
+                        className="text-purple-500"
+                      />
                     </div>
                     <div>
                       <h3 className="font-semibold text-slate-900 mb-1">
-                        Время работы
+                        Telegram
                       </h3>
-                      <p className="text-slate-600">Пн-Пт: 9:00 - 18:00 МСК</p>
+                      <p className="text-slate-600">@novacs0</p>
                       <p className="text-sm text-slate-500 mt-1">
-                        Выходные: только критические вопросы
+                        Быстрая связь и обновления
                       </p>
                     </div>
                   </div>
