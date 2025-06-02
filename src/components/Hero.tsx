@@ -1,56 +1,45 @@
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 text-white py-20 overflow-hidden">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3')] bg-cover bg-center opacity-20"></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/70"></div>
+      </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <Badge className="mb-4 bg-orange-500/20 text-orange-400 border-orange-500/30">
-            <Icon name="Zap" size={14} />
-            Последние обновления
-          </Badge>
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+        <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-orange-500 to-red-500 bg-clip-text text-transparent">
+          COUNTER STRIKE 2
+        </h1>
+        <p className="text-xl md:text-2xl text-gray-300 mb-8">
+          Новая эра тактического шутера. Обновленная графика, улучшенная физика,
+          бесконечные возможности.
+        </p>
 
-          <h1 className="text-5xl md:text-7xl font-bold font-oswald mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
-            COUNTER STRIKE 2
-          </h1>
-
-          <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Новая эра киберспорта началась. Следите за последними новостями,
-            турнирами и обновлениями легендарной игры.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="https://rutube.ru/video/dd25bdf330b767041c4b0724b4c85307/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3"
-              >
-                <Icon name="Play" size={20} />
-                Смотреть трейлер
-              </Button>
-            </a>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white/30 text-white hover:bg-white/10 px-8 py-3"
-            >
-              <Icon name="Trophy" size={20} />
-              Турниры
-            </Button>
-          </div>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            to="/news"
+            className="bg-orange-500 hover:bg-orange-600 text-black px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
+          >
+            <Icon name="Zap" size={20} />
+            <span>Последние новости</span>
+          </Link>
+          <Link
+            to="/history"
+            className="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-black px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-colors"
+          >
+            <Icon name="BookOpen" size={20} />
+            <span>История игры</span>
+          </Link>
         </div>
       </div>
     </section>
   );
-};
-
-export default Hero;
+}

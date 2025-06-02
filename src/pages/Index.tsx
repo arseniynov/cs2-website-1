@@ -1,17 +1,15 @@
-import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
-import NewsSection from "@/components/NewsSection";
-import TournamentBanner from "@/components/TournamentBanner";
+import NewsPreview from "@/components/NewsPreview";
+import PopularArticles from "@/components/PopularArticles";
+import GameStats from "@/components/GameStats";
 
-const Index = () => {
+export default function Index() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
+    <div>
       <Hero />
-      <NewsSection />
-      <TournamentBanner />
+      <NewsPreview />
+      <PopularArticles />
+      <GameStats />
     </div>
   );
-};
-
-export default Index;
+}
