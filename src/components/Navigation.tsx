@@ -24,16 +24,36 @@ const Navigation = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="flex items-center space-x-2 text-slate-300 hover:text-orange-500 transition-colors duration-200"
-              >
-                <Icon name={item.icon as any} size={16} />
-                <span className="font-medium">{item.name}</span>
-              </a>
-            ))}
+            <Link
+              to="/"
+              className="text-slate-600 hover:text-orange-500 transition-colors"
+            >
+              Главная
+            </Link>
+            <Link
+              to="/news"
+              className="text-slate-600 hover:text-orange-500 transition-colors"
+            >
+              Новости
+            </Link>
+            <Link
+              to="/history"
+              className="text-slate-600 hover:text-orange-500 transition-colors"
+            >
+              История
+            </Link>
+            <Link
+              to="/gallery"
+              className="text-slate-600 hover:text-orange-500 transition-colors"
+            >
+              Галерея
+            </Link>
+            <Link
+              to="/contacts"
+              className="text-slate-600 hover:text-orange-500 transition-colors"
+            >
+              Контакты
+            </Link>
           </div>
 
           <Button
