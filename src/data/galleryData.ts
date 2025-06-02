@@ -31,65 +31,37 @@ export const videosData = [
 export const screenshotsData = [
   {
     id: 1,
-    title: "Dust2 - вид на A-сайт",
+    title: "IEM Rio 2022 - Турнирная арена",
     image:
-      "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&w=800&q=80",
-    category: "Карты",
+      "https://cdn.poehali.dev/files/037e626d-76af-43bb-bc38-73ce871affb7.jpg",
+    category: "Турниры",
   },
   {
     id: 2,
-    title: "AK-47 Redline",
+    title: "CS:GO - Игровой процесс",
     image:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&w=800&q=80",
-    category: "Скины",
+      "https://cdn.poehali.dev/files/55c54cdf-7442-4b79-be67-b6cc78647450.jpg",
+    category: "Геймплей",
   },
   {
     id: 3,
-    title: "Mirage - коннектор",
+    title: "CS:GO - Момент матча",
     image:
-      "https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&w=800&q=80",
-    category: "Карты",
+      "https://cdn.poehali.dev/files/a58008c0-d0a8-4e21-93f0-af67f64c5a64.jpg",
+    category: "Геймплей",
   },
   {
     id: 4,
-    title: "Inferno - банана",
+    title: "Нож Kukri - Редкий скин",
     image:
-      "https://images.unsplash.com/photo-1560253023-3ec5d502959f?ixlib=rb-4.0.3&w=800&q=80",
-    category: "Карты",
+      "https://cdn.poehali.dev/files/814a2f24-cd17-4007-a2be-a5541ce52fea.png",
+    category: "Скины",
   },
   {
     id: 5,
-    title: "AWP Dragon Lore",
+    title: "Турнирная сцена",
     image:
-      "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&w=800&q=80",
-    category: "Скины",
-  },
-  {
-    id: 6,
-    title: "Cache - главная арена",
-    image:
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&w=800&q=80",
-    category: "Карты",
-  },
-  {
-    id: 7,
-    title: "M4A4 Howl",
-    image:
-      "https://images.unsplash.com/photo-1538300342682-cf57afb97285?ixlib=rb-4.0.3&w=800&q=80",
-    category: "Скины",
-  },
-  {
-    id: 8,
-    title: "Overpass - тоннели",
-    image:
-      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&w=800&q=80",
-    category: "Карты",
-  },
-  {
-    id: 9,
-    title: "Knife | Karambit Fade",
-    image:
-      "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?ixlib=rb-4.0.3&w=800&q=80",
-    category: "Скины",
+      "https://cdn.poehali.dev/files/8d1375b1-b583-428f-b87b-1608d36c1961.jpg",
+    category: "Турниры",
   },
 ];
