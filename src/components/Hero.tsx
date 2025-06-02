@@ -25,13 +25,19 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button
-              size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3"
+            <a
+              href="https://rutube.ru/video/dd25bdf330b767041c4b0724b4c85307/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <Icon name="Play" size={20} />
-              Смотреть трейлер
-            </Button>
+              <Button
+                size="lg"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3"
+              >
+                <Icon name="Play" size={20} />
+                Смотреть трейлер
+              </Button>
+            </a>
             <Button
               variant="outline"
               size="lg"
